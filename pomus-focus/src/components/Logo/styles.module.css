@@ -1,0 +1,31 @@
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logotipo {
+  display: flex;
+  width: 20rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.logotipo:hover {
+  filter: brightness(100%);
+  transition: all 0.5s ease-in-out;
+  animation: abrir 1.5s forwards;
+}
+
+@keyframes abrir {
+  0% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+    filter: brightness(800%);
+  }
+}

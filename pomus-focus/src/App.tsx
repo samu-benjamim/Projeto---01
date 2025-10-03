@@ -7,6 +7,9 @@ import "./styles/global.css";
 import { CountDown } from "./components/CountDown";
 import { Input } from "./components/Input";
 import { Cycles } from "./components/Cycles";
+import { ButtonPlay } from "./components/ButtonPlay";
+import { PlayCircleIcon } from "lucide-react";
+import { Footer } from "./components/Footer";
 
 export function App() {
   return (
@@ -29,16 +32,24 @@ export function App() {
               type="text"
               placeholder="Digite a atividade aqui"></Input>
           </div>
-          <div className="formRow">
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-          <div className="formRow">
-            <Cycles />
-          </div>
-          <div className="formRow">
-            <button>Iniciar</button>
-          </div>
         </form>
+      </Container>
+      <div className="formRow">
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      <Container>
+        <Cycles />
+      </Container>
+      <Container>
+        <ButtonPlay
+          icon={<PlayCircleIcon />}
+          id="playtime"
+          type="button"
+          color="green"
+        />
+      </Container>
+      <Container>
+        <Footer />
       </Container>
     </>
   );

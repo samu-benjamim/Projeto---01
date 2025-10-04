@@ -12,6 +12,16 @@ import { PlayCircleIcon } from "lucide-react";
 import { Footer } from "./components/Footer";
 
 export function App() {
+  /*const [numero, setNumber] = useState(() => {
+    return 0; // usando uma função para atribuir o valor no userState ajuda a economizar processamento do codigo executando apenas uma vez
+  }); // quando precisar usar uma variavel que irá ser alterada usar userState que restona uma array [valor, configuração do valor]
+
+  function handleClick() {
+    setNumber((prevState) => prevState + 1); //  sempre que for alterar uma variavel que está nbo userState usar uma função
+  } 
+        <Heading>Número: {numero}</Heading>
+      <button onClick={handleClick}>Aumentar</button>  
+  */
   return (
     <>
       <Container>

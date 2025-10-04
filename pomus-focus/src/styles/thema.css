@@ -40,3 +40,23 @@
   --disabled: #555f7d;
   --text-disable: #aab3cc;
 }
+
+:root[data-theme="light"] {
+  --gray-900: #cdd3e1;
+  --gray-700: #aab3cc;
+  --gray-600: #555f7d;
+  --gray-500: #454f6a;
+  --gray-400: #363d56;
+  --gray-300: #272f43;
+  --gray-200: #181f2e;
+  --gray-100: #0a0f1a;
+
+  --link-color: #ca3826;
+  --link-houver: #e26352;
+
+  --text-default: #181f2e;
+  --text-muted: #272f43;
+
+  --disabled: #555f7d;
+  --text-disable: #aab3cc;
+}

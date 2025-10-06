@@ -1,4 +1,5 @@
 .cycles {
+  margin-top: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6,6 +7,7 @@
 }
 
 .cyclesDots {
+  margin-top: 1rem;
   display: flex;
   flex-direction: row;
   gap: 1rem;

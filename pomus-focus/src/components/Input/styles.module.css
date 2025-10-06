@@ -8,6 +8,7 @@
   width: 30rem;
   color: var(--text-default);
   outline: none;
+  margin-bottom: 3rem;
 }
 
 .input:focus {

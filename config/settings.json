@@ -8,6 +8,7 @@
   "workbench.activityBar.location": "hidden",
   "editor.lineNumbers": "off",
   "files.eol": "\n",
+  "explore.compactFolders": false,
 
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,

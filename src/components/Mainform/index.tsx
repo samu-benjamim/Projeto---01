@@ -8,7 +8,6 @@ import { useTaskContext } from "../../contexts/TaskContext/useTaskContext";
 import { getNextCycle } from "../../utils/getNextCycle";
 import { getNextCycleType } from "../../utils/getNextCycleType";
 import { formatSecondsToMinutes } from "../../utils/formatSecondsToMinutes";
-import { TaskContext } from "../../contexts/TaskContext/TaskContext";
 
 export function MainForm() {
   const { state, setState } = useTaskContext();
@@ -55,6 +54,24 @@ export function MainForm() {
     });
   }
 
+  function handleInterruptTask() {
+    setState((prevState) => {
+      return {
+        ...prevState,
+        activeTask: null,
+        secondsRemaining: 0,
+        formattedSecondsRemaining: "00:00",
+        tasks: prevState.tasks.map((task) => {
+          if (prevState.activeTask && prevState.activeTask.id === task.id) {
+            return { ...task, interruptDate: Date.now() };
+          }
+          return task;
+        }),
+      };
+    });
+    alert("Você está interrompendo sua Atividade!");
+  }
+
   return (
     <>
       <form className="form" action="" onSubmit={handleCreateNewTask}>
@@ -67,7 +84,7 @@ export function MainForm() {
             placeholder="Digite a atividade aqui"
             disabled={!!state.activeTask}></Input>
           <div className="formRow">
-            <p>O próximo interevalor é de 25 min</p>
+            <p>O próximo intervalo é de 25 min</p>
           </div>
           {state.currentCycle > 0 && <Cycles />}
           {!state.activeTask ? (
@@ -78,6 +95,7 @@ export function MainForm() {
               id="playtime"
               type="submit"
               color="green"
+              key="submit"
             />
           ) : (
             <ButtonPlay
@@ -87,6 +105,8 @@ export function MainForm() {
               id="playtime"
               type="button"
               color="red"
+              onClick={handleInterruptTask}
+              key="button"
             />
           )}
         </div>

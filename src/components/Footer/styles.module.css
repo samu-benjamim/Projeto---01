@@ -9,6 +9,7 @@
 .footer .info {
   font-size: 1.8rem;
   margin-bottom: 3rem;
+  font-size: 1.5rem;
 }
 .footer .info:hover {
   text-decoration: underline;

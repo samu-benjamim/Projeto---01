@@ -7,6 +7,7 @@ import {
   HouseIcon,
   MoonIcon,
 } from "lucide-react";
+import { Link } from "react-router";
 
 type AvailableThemes = "dark" | "light";
 
@@ -40,13 +41,13 @@ export function ButtonMenu() {
 
   return (
     <nav className={styles.navegation}>
-      <a
+      <Link
         className={styles.button}
-        href="#"
+        to="/"
         aria-label="Ir para a Home"
         title="Ir para a Home">
         <HouseIcon />
-      </a>
+      </Link>
       <a
         className={styles.button}
         href="#"
@@ -54,13 +55,13 @@ export function ButtonMenu() {
         title="Ver Histórico">
         <HistoryIcon />
       </a>
-      <a
+      <Link
         className={styles.button}
-        href="#"
+        to="/setting"
         aria-label="Configurações"
         title="Configurações">
         <SettingsIcon />
-      </a>
+      </Link>
       <a
         className={styles.button}
         href=""

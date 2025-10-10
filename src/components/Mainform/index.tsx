@@ -9,6 +9,7 @@ import { getNextCycle } from "../../utils/getNextCycle";
 import { getNextCycleType } from "../../utils/getNextCycleType";
 import { TaskActionsTypes } from "../../contexts/TaskContext/taskActions";
 import { CycleDescription } from "../CycleDescription/CycleDescription";
+import { showMassage } from "../../adapters/showMessage";
 
 export function MainForm() {
   const { state, dispatch } = useTaskContext();
@@ -25,7 +26,7 @@ export function MainForm() {
     const taskName = taskNameInput.current?.value.trim();
 
     if (!taskName) {
-      alert("Digite o nome da atividade");
+      showMassage.warn("Digite o nome da atividade");
       return;
     }
 
@@ -40,11 +41,13 @@ export function MainForm() {
     };
 
     dispatch({ type: TaskActionsTypes.START_TASK, payload: newTask });
+    showMassage.success("Atividade iniciada");
   }
 
   function handleInterruptTask() {
     dispatch({ type: TaskActionsTypes.INTERRUPT_TASK });
     alert("Você está interrompendo sua Atividade!");
+    showMassage.error("Você interrompeu o ciclo!");
   }
 
   return (

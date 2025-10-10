@@ -39,8 +39,21 @@
 
   --disabled: #555f7d;
   --text-disable: #aab3cc;
-}
 
+  --toastify-color-light: var(--text-gray);
+  --toastify-color-dark: var(--gray-700);
+  --toastify-color-info: var(--info);
+  --toastify-color-success: var(--success);
+  --toastify-color-warning: var(--warning);
+  --toastify-color-error: var(--error);
+  --toastify-text-color-light: #0a0f1a;
+  --toastify-text-color-dark: #e6e9f0;
+  --toastify-color-progress-light: var(--primary);
+  --toastify-color-progress-dark: var(--primary);
+}
+.Toastify__close-button {
+  color: var(--toastify-text-color-dark);
+}
 :root[data-theme="light"] {
   --gray-900: #cdd3e1;
   --gray-700: #aab3cc;
@@ -59,4 +72,7 @@
 
   --disabled: #555f7d;
   --text-disable: #aab3cc;
+
+  --toastify-text-color-light: #0a0f1a;
+  --toastify-text-color-dark: #0a0f1a;
 }

@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import { GenericHtml } from "../../components/GenericHtml";
 import { MainTemplete } from "../../templetes/MainTempletes";
 
@@ -7,7 +8,7 @@ export function About() {
       <GenericHtml>
         <h1>🍅 Técnica Pomodoro: o segredo do foco inteligente</h1>
         <p>
-          A Técnica Pomodoro é um método simples e poderoso criado por{" "}
+          A Técnica Pomodoro é um método simples e poderoso criado por
           <strong>Francesco Cirillo</strong> para aumentar a produtividade.
         </p>
         <p>
@@ -31,6 +32,7 @@ export function About() {
             30 minutos).
           </li>
         </ul>
+        <br />
         <h2>🚀 O diferencial do PomusFocus</h2>
         <p>
           O PomusFocus segue a essência do Pomodoro tradicional, mas traz
@@ -44,7 +46,7 @@ export function About() {
         <p>
           Na página de
           <span>
-            <a href=""> configurações</a>
+            <Link to="/setting"> configurações</Link>
           </span>
           , você ajusta tudo do seu jeito — simples e rápido.
         </p>
@@ -61,6 +63,7 @@ export function About() {
           <li>Ciclos pares → Pausas curtas para respirar.</li>
           <li>Ciclo 8 → Descanso longo especial para resetar o foco.</li>
         </ul>
+        <br />
         <h3>🍅 Visualização dos ciclos</h3>
         <p>
           Logo abaixo do cronômetro, você verá marcadores coloridos mostrando o
@@ -68,15 +71,15 @@ export function About() {
         </p>
         <ul>
           <li>
-            🟠 Laranja — representa o momento de foco total, quando é hora de
+            🟠 Laranja - representa o momento de foco total, quando é hora de
             mergulhar na tarefa sem distrações.
           </li>
           <li>
-            🔵 Azul — indica a pausa curta, o intervalo rápido pra relaxar,
+            🔵 Azul - indica a pausa curta, o intervalo rápido pra relaxar,
             respirar e preparar a mente para o próximo ciclo.
           </li>
           <li>
-            🟢 Verde — marca a pausa longa, que acontece a cada 8 ciclos
+            🟢 Verde - marca a pausa longa, que acontece a cada 8 ciclos
             completos, ideal pra recarregar a energia antes de recomeçar.
           </li>
         </ul>
@@ -84,6 +87,7 @@ export function About() {
           Com isso, você sempre sabe onde está e o que vem a seguir, sem
           precisar anotar nada.
         </p>
+        <br />
         <h3>📊 Histórico inteligente</h3>
         <p>
           Todas as suas tarefas ficam registradas automaticamente no
@@ -95,7 +99,7 @@ export function About() {
         <p>
           Acompanhe seu progresso e veja como seu foco evolui ao longo dos dias.
         </p>
-        <h2>💪 Por que usar o PomusFocus?</h2>
+        <br />c<h2>💪 Por que usar o PomusFocus?</h2>
         <p>✅ Organize seu tempo com clareza.</p>
         <p>✅ Trabalhe e descanse na medida certa.</p>
         <p>✅ Personalize cada detalhe do seu ciclo.</p>

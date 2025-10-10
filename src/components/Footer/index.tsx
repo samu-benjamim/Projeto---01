@@ -1,11 +1,12 @@
+import { Link } from "react-router";
 import styles from "./styles.module.css";
 
 export function Footer() {
   return (
     <footer className={styles.footer}>
-      <a className={styles.info} href="">
+      <Link className={styles.info} to="/about">
         Descubra como funciona a técnica pomodoro.
-      </a>
+      </Link>
       <p>Feito como objeto de pratica em React.js e Next.js</p>
       <a
         className={styles.infoLink}

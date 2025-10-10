@@ -2,11 +2,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 .buttonplay {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   display: flex;
   width: 20rem;
   height: 4.8rem;

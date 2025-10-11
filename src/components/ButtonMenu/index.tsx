@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import styles from "./styles.module.css";
+import { RouteLink } from "../RouterLink";
 import {
   HistoryIcon,
   SettingsIcon,
@@ -7,7 +7,8 @@ import {
   HouseIcon,
   MoonIcon,
 } from "lucide-react";
-import { Link } from "react-router";
+
+import styles from "./styles.module.css";
 
 type AvailableThemes = "dark" | "light";
 
@@ -41,27 +42,27 @@ export function ButtonMenu() {
 
   return (
     <nav className={styles.navegation}>
-      <Link
+      <RouteLink
         className={styles.button}
-        to="/"
+        href="/"
         aria-label="Ir para a Home"
         title="Ir para a Home">
         <HouseIcon />
-      </Link>
-      <a
+      </RouteLink>
+      <RouteLink
         className={styles.button}
         href="#"
         aria-label="Ver Histórico"
         title="Ver Histórico">
         <HistoryIcon />
-      </a>
-      <Link
+      </RouteLink>
+      <RouteLink
         className={styles.button}
-        to="/setting"
+        href="/setting"
         aria-label="Configurações"
         title="Configurações">
         <SettingsIcon />
-      </Link>
+      </RouteLink>
       <a
         className={styles.button}
         href=""

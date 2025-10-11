@@ -99,7 +99,8 @@ export function About() {
         <p>
           Acompanhe seu progresso e veja como seu foco evolui ao longo dos dias.
         </p>
-        <br />c<h2>💪 Por que usar o PomusFocus?</h2>
+        <br />
+        <h2>💪 Por que usar o PomusFocus?</h2>
         <p>✅ Organize seu tempo com clareza.</p>
         <p>✅ Trabalhe e descanse na medida certa.</p>
         <p>✅ Personalize cada detalhe do seu ciclo.</p>

@@ -1,0 +1,12 @@
+.buttonplay button {
+  margin-top: 1rem;
+  display: flex;
+  width: 4rem;
+  height: 4rem;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-over-primary);
+  border-radius: 0.8rem;
+  border: none;
+  background-color: var(--error);
+}

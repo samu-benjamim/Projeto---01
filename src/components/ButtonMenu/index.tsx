@@ -51,7 +51,7 @@ export function ButtonMenu() {
       </RouteLink>
       <RouteLink
         className={styles.button}
-        href="#"
+        href="/history"
         aria-label="Ver Histórico"
         title="Ver Histórico">
         <HistoryIcon />

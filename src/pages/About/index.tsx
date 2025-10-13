@@ -1,6 +1,6 @@
-import { Link } from "react-router";
 import { GenericHtml } from "../../components/GenericHtml";
 import { MainTemplete } from "../../templetes/MainTempletes";
+import { RouteLink } from "../../components/RouterLink";
 
 export function About() {
   return (
@@ -46,7 +46,7 @@ export function About() {
         <p>
           Na página de
           <span>
-            <Link to="/setting"> configurações</Link>
+            <RouteLink href="/setting"> configurações</RouteLink>
           </span>
           , você ajusta tudo do seu jeito — simples e rápido.
         </p>
@@ -92,7 +92,7 @@ export function About() {
         <p>
           Todas as suas tarefas ficam registradas automaticamente no
           <span>
-            <a href=""> histórico </a>
+            <RouteLink href="/history"> histórico </RouteLink>
           </span>
           - completas, interrompidas ou em andamento.
         </p>

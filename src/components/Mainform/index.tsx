@@ -18,6 +18,8 @@ export function MainForm() {
   const nextCycleType = getNextCycleType(nextCycle);
 
   const taskNameInput = useRef<HTMLInputElement>(null);
+
+  const lastTaskName = state.tasks[state.tasks.length - 1]?.name || "";
   function handleCreateNewTask(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
@@ -32,7 +34,7 @@ export function MainForm() {
 
     const newTask: TaskModel = {
       id: Date.now().toString(),
-      nome: taskName,
+      name: taskName,
       duration: state.config[nextCycleType],
       startDate: Date.now(),
       completeDate: null,
@@ -60,7 +62,8 @@ export function MainForm() {
             id="inputtask"
             type="text"
             placeholder="Digite a atividade aqui"
-            disabled={!!state.activeTask}></Input>
+            disabled={!!state.activeTask}
+            defaultValue={lastTaskName}></Input>
           <div className="formRow">
             <CycleDescription />
           </div>

@@ -47,8 +47,8 @@ export function MainForm() {
   }
 
   function handleInterruptTask() {
-    dispatch({ type: TaskActionsTypes.INTERRUPT_TASK });
     if (!confirm("Tem certeza que deseja interromper a sua Atividade?")) return;
+    dispatch({ type: TaskActionsTypes.INTERRUPT_TASK });
     showMassage.error("Você interrompeu o ciclo!");
   }
 

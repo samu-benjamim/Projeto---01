@@ -14,7 +14,7 @@ export function About() {
         <h1>🍅 Método Pomodoro: o segredo do foco inteligente</h1>
         <p>
           O método Pomodoro é uma técnica simples e poderosa criada por
-          <strong>Francesco Cirillo</strong> para aumentar a produtividade.
+          <strong> Francesco Cirillo</strong> para aumentar a produtividade.
         </p>
         <p>
           A ideia é dividir o tempo de trabalho em blocos curtos de foco

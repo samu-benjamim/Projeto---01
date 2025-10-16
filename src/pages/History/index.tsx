@@ -18,7 +18,7 @@ export function History() {
   const hasTasks = state.tasks.length > 0;
 
   function hendleResetHIsttory() {
-    if (!confirm("Tem certeza que deseja excluir todo o histórico")) return;
+    if (!confirm("Tem certeza que deseja excluir todo o histórico?")) return;
 
     dispatch({ type: TaskActionsTypes.RESET_STATE });
   }

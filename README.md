@@ -14,8 +14,6 @@ Projetada para ser **simples, extensível e sólida**, com foco em **boas práti
 - [Estrutura do Projeto](#estrutura-do-projeto)
 - [Notas Técnicas](#notas-técnicas)
 - [Testes e Validação](#testes-e-validação)
-- [Contribuindo](#contribuindo)
-- [Contato](#contato)
 
 ---
 

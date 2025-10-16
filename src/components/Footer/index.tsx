@@ -10,7 +10,8 @@ export function Footer() {
       <p>Feito como objeto de pratica em React.js</p>
       <RouteLink
         className={styles.infoLink}
-        href="https://www.linkedin.com/in/dev-samuel-santos">
+        href="https://www.linkedin.com/in/dev-samuel-santos"
+        target="_blank">
         Desenvolvido por Samuel Mendes
       </RouteLink>
       <p>PomusFocus &copy; {new Date().getFullYear()}</p>

@@ -1,14 +1,19 @@
 import { GenericHtml } from "../../components/GenericHtml";
 import { MainTemplete } from "../../templetes/MainTempletes";
 import { RouteLink } from "../../components/RouterLink";
+import { useEffect } from "react";
 
 export function About() {
+  useEffect(() => {
+    document.title = "Entenda a Método Pomodoro - PomusFocus";
+  });
+
   return (
     <MainTemplete>
       <GenericHtml>
-        <h1>🍅 Técnica Pomodoro: o segredo do foco inteligente</h1>
+        <h1>🍅 Método Pomodoro: o segredo do foco inteligente</h1>
         <p>
-          A Técnica Pomodoro é um método simples e poderoso criado por
+          A Método Pomodoro é um método simples e poderoso criado por
           <strong>Francesco Cirillo</strong> para aumentar a produtividade.
         </p>
         <p>

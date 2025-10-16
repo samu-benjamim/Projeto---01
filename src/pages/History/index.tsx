@@ -8,8 +8,12 @@ import style from "./styles.module.css";
 import { TableHistory } from "../../components/TableHistory";
 import { useTaskContext } from "../../contexts/TaskContext/useTaskContext";
 import { TaskActionsTypes } from "../../contexts/TaskContext/taskActions";
+import { useEffect } from "react";
 
 export function History() {
+  useEffect(() => {
+    document.title = "Histórico - PomusFocus";
+  });
   const { dispatch, state } = useTaskContext();
   const hasTasks = state.tasks.length > 0;
 

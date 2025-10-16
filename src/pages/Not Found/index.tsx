@@ -1,8 +1,12 @@
-import { GenericHtml } from "../../components/GenericHtml"
-import { Heading } from "../../components/Heading"
-import { MainTemplete } from "../../templetes/MainTempletes"
+import { useEffect } from "react";
+import { GenericHtml } from "../../components/GenericHtml";
+import { Heading } from "../../components/Heading";
+import { MainTemplete } from "../../templetes/MainTempletes";
 
 export function NotFound() {
+  useEffect(() => {
+    document.title = "Página não encontrada - FocusPomus";
+  });
   return (
     <MainTemplete>
       <GenericHtml>
@@ -31,5 +35,5 @@ export function NotFound() {
         </p>
       </GenericHtml>
     </MainTemplete>
-  )
+  );
 }

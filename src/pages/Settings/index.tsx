@@ -12,10 +12,10 @@ export function Setting() {
   return (
     <MainTemplete>
       <Container>
-        <Heading>Configuração:</Heading>
+        <Heading>Configurações:</Heading>
       </Container>
       <Container>
-        <Paragraph> Configuração dos períodos do Pomodoro. </Paragraph>
+        <Paragraph> Ajuste os períodos do Pomodoro. </Paragraph>
       </Container>
       <Container>
         <SettingsInput></SettingsInput>

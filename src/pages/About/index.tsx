@@ -13,7 +13,7 @@ export function About() {
       <GenericHtml>
         <h1>🍅 Método Pomodoro: o segredo do foco inteligente</h1>
         <p>
-          A Método Pomodoro é um método simples e poderoso criado por
+          O método Pomodoro é uma técnica simples e poderosa criada por
           <strong>Francesco Cirillo</strong> para aumentar a produtividade.
         </p>
         <p>

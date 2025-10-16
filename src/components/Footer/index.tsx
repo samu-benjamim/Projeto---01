@@ -7,7 +7,7 @@ export function Footer() {
       <RouteLink className={styles.info} href="/about">
         Descubra como funciona o Método Pomodoro.
       </RouteLink>
-      <p>Feito como objeto de pratica em React.js</p>
+      <p>Feito como projeto de prática em React.js</p>
       <RouteLink
         className={styles.infoLink}
         href="https://www.linkedin.com/in/dev-samuel-santos"

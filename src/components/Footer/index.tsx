@@ -4,6 +4,10 @@ import { RouteLink } from "../RouterLink";
 export function Footer() {
   return (
     <footer className={styles.footer}>
+      <p>
+        Obs.: Atualizar ou fechar a página durante a atividade fará com que ela
+        seja marcada como abandonada.
+      </p>
       <RouteLink className={styles.info} href="/about">
         Descubra como funciona o Método Pomodoro.
       </RouteLink>
